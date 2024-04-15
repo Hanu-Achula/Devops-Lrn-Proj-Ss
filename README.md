@@ -1,2 +1,1 @@
-# Devops-Lrn-Proj-Ss
-This is for shell scripting
+/* This Repo is created for store Linux Scripts */
