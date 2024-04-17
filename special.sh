@@ -7,4 +7,6 @@
 
 echo "All Arguments Are ${@}"
 
-echo "Number Of rguments ${#}" 
+echo "Number Of rguments ${#}"
+
+echo "Script Name Is ${0}"
