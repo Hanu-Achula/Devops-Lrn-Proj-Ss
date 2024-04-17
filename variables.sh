@@ -5,8 +5,11 @@
 # Date-Written   : 17-04-2024
 # Description    : To Learn Variables
 ###############################
-
-echo "Hanu:: Hi Tej"
-echo "Tej:: Hi Hanu,How Are You!"
-echo "Hanu:: I am Fine!How Are You?"
-echo "Tej :: I am Good!!"
+# Declaring Variables
+PERSON1="Hanu"
+PERSON2="Tej"
+# Referencing Variables
+echo "$PERSON1:: Hi $PERSON2"
+echo "$PERSON2:: Hi $PERSON1,How Are You!"
+echo "$PERSON1:: I am Fine!How Are You?"
+echo "$PERSON2 :: I am Good!!"
