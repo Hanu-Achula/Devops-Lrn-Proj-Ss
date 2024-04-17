@@ -6,3 +6,5 @@
 ##########################
 
 echo "All Arguments Are ${@}"
+
+echo "Number Of rguments ${#}" 
