@@ -4,9 +4,4 @@
 # Author    :   Hanu
 # Date      :   17-04-2024
 ##########################
-
-echo "All Arguments Are ${@}"
-
-echo "Number Of rguments ${#}"
-
-echo "Script Name Is ${0}"
+echo "${@} ${#} ${PWD} ${0}" 
