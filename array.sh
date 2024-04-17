@@ -17,3 +17,10 @@ echo "First Element ${movies[0]}"
 # All Elements
 
 echo "All Elements ${movies[@]}"
+
+# For Loop 
+
+for i in {movies} 
+do
+echo "Element Is $i"
+done
