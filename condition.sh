@@ -19,6 +19,5 @@ elif [ ${B} -gt ${A} ]
 then
 echo "B is Greater Than A "
 else
-then
 echo "A is Equal To B"
 fi
