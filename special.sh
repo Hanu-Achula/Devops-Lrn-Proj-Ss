@@ -4,7 +4,7 @@
 # Author    :   Hanu
 # Date      :   17-04-2024
 ##########################
-declare -i sum = ${1}
+declare -i sum=${1}
 
 echo "Sum Is ${sum}"
 
