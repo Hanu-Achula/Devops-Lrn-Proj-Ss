@@ -4,4 +4,4 @@
 # Author    :   Hanu
 # Date      :   17-04-2024
 ##########################
-echo "${@} ${#} ${PWD} ${0} ${HOME} ${HOSTNAME}" 
+echo "${@} ${#} ${PWD} ${0} ${HOME} ${HOSTNAME} ${$}" 
