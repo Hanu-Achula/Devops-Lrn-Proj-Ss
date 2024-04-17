@@ -6,8 +6,8 @@
 # Description    : To Learn Variables
 ###############################
 # Declaring Variables
-PERSON1=$1  //argument1
-PERSON2=$2  //argument2
+PERSON1=$1  #argument1
+PERSON2=$2  #argument2
 
 # Referencing Variables
 echo "$PERSON1:: Hi $PERSON2"
