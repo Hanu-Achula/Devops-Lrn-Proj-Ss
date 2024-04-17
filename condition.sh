@@ -13,12 +13,12 @@ read -p "Enter  Value For B:" B
 echo ""
 
 if [ ${A} -gt ${B} ]
-than
+then
 echo "A is Greater Than B"
 elif [ ${B} -gt ${A} ]
-than
+then
 echo "B is Greater Than A "
 else
-than
+then
 echo "A is Equal To B"
 fi
