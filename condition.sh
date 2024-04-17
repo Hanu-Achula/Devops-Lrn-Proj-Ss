@@ -15,7 +15,7 @@ echo ""
 if [ ${A} -gt ${B} ]
 than
 echo "A is Greater Than B"
-else if [ ${B} -gt ${A} ]
+elif [ ${B} -gt ${A} ]
 than
 echo "B is Greater Than A "
 else
