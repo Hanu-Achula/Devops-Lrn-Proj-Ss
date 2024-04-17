@@ -7,7 +7,7 @@
 ###############################
 
 # Capturing User Entered Credentials
-read -ps "User Name:" USERNAME
-read -ps "Password:" PASSWORD
+read -p "User Name:" -s USERNAME
+read -p "Password:"  -s PASSWORD
 # Print Credentials
 echo "User Name Is : $USERNAME Password Is : $PASSWORD"
