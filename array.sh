@@ -20,7 +20,7 @@ echo "All Elements ${movies[@]}"
 
 # For Loop 
 
-for i in {movies} 
+for i in ${movies} 
 do
 echo "Element Is $i"
 done
