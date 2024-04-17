@@ -8,6 +8,8 @@
 
 # Capturing User Entered Credentials
 read -p "User Name:" -s USERNAME
+echo " "
 read -p "Password:"  -s PASSWORD
+echo " "
 # Print Credentials
 echo "User Name Is : $USERNAME Password Is : $PASSWORD"
