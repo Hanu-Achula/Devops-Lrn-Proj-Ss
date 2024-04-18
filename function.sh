@@ -2,8 +2,8 @@
 
 FILENAME=$( echo ${0} | awk -F "." '{print $1F}' )
 TIMESTAMP=$(date +%F-%H-%M-%S)
-SUCCESSLOGFILE="/tmp/${FILENAME}-{$TIMESTAMP}-SUCCESS.log"
-FAILURELOGFILE="/tmp/${FILENAME}-{$TIMESTAMP}-SUCCESS.log"
+SUCCESSLOGFILE="/tmp/${FILENAME}-${TIMESTAMP}-SUCCESS.log"
+FAILURELOGFILE="/tmp/${FILENAME}-${TIMESTAMP}-FAILURE.log"
 
 R="\e[31m"
 G="\e[32m"
@@ -23,7 +23,7 @@ fi
 
 
 
-dnf install mysql-server 1>${SUCCESSLOGFILE} 2>${FAILURELOGFILE}
+dnf install mysql-server >${SUCCESSLOGFILE} 2>${FAILURELOGFILE}
 
 VALIDATE ${?} "MYSQL"
 
