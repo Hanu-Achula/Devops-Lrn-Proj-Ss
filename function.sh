@@ -14,9 +14,9 @@ VALIDATE()
 
 if [ ${1} -ne 0 ]
 then
-echo "${2}....${R} FAILURE ${N}..PLEASE CHECK LOG" 
+echo "${2}.... ${R} FAILURE ${N} ..PLEASE CHECK LOG" 
 else
-echo "${2}....${G} SUCCESS ${N}..DETAILS IN LOG"
+echo "${2}.... ${G} SUCCESS ${N} ..DETAILS IN LOG"
 fi
 
 }
