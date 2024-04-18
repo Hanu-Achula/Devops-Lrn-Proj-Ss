@@ -1,9 +1,9 @@
 #!/bin/bash
 
-FILENAME = $( echo ${0} | awk -F "." '{print $1F}' )
-TIMESTAMP = $(date +%F-%H-%M-%S)
-SUCCESSLOGFILE = "/tmp/${FILENAME}-{$TIMESTAMP}-SUCCESS.log"
-FAILURELOGFILE = "/tmp/${FILENAME}-{$TIMESTAMP}-SUCCESS.log"
+FILENAME=$( echo ${0} | awk -F "." '{print $1F}' )
+TIMESTAMP=$(date +%F-%H-%M-%S)
+SUCCESSLOGFILE="/tmp/${FILENAME}-{$TIMESTAMP}-SUCCESS.log"
+FAILURELOGFILE="/tmp/${FILENAME}-{$TIMESTAMP}-SUCCESS.log"
 
 R="\e[31m"
 G="\e[32m"
@@ -17,6 +17,7 @@ then
 echo "${2}....${R} FAILURE ${N}..PLEASE CHECK LOG" 
 else
 echo "${2}....${G} SUCCESS ${N}..DETAILS IN LOG"
+fi
 
 }
 
