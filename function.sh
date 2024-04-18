@@ -1,7 +1,7 @@
 USER=$(id -u)
 
-R="/e[31m"
-N="/e[0m"
+R=/e[31m
+N=/e[0m
 
 if [ $USER -ne 0 ]
  then
