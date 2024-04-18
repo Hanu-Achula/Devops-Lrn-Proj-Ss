@@ -1,4 +1,4 @@
-mesage()
+message()
 {
     echo "${1} ${2}"
 }
