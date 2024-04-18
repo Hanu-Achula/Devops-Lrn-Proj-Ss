@@ -1,11 +1,28 @@
-USER=$(id -u)
+#!/bin/bash
 
-R=\e[31m
-N=\e[0m
+FILENAME = $( echo ${0} | awk -F "." '{print $1F}' )
+TIMESTAMP = $(date +%F-%H-%M-%S)
+SUCCESSLOGFILE = "/tmp/${FILENAME}-{$TIMESTAMP}-SUCCESS.log"
+FAILURELOGFILE = "/tmp/${FILENAME}-{$TIMESTAMP}-SUCCESS.log"
 
-if [ $USER -ne 0 ]
- then
- echo -e "\e[31m Script Should be Run With Admin "
- else
- echo "YOU ARE SUPER USER"
- fi
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+
+VALIDATE()
+{
+
+if [ ${1} -ne 0 ]
+then
+echo "${2}....${R} FAILURE ${N}..PLEASE CHECK LOG" 
+else
+echo "${2}....${G} SUCCESS ${N}..DETAILS IN LOG"
+
+}
+
+
+
+dnf install mysql-server 1>${SUCCESSLOGFILE} 2>${FAILURELOGFILE}
+
+VALIDATE ${?} "MYSQL"
+
